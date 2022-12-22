@@ -21,10 +21,10 @@ class UsersController extends Controller
 
     public function index()
     {
-        $users = User::all();
+        $users = User::paginate(6);
         return view('users.index', compact('users'));
     }
-    
+
     public function create()
     {
         return view('users.create');
