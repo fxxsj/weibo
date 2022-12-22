@@ -11,6 +11,7 @@
     <div class="container">
       <div class="offset-md-1 col-md-10">
         <div style="min-height:75vh">
+          @include('shared._messages')
           @yield('content')
         </div>
         @include('layouts._footer')
